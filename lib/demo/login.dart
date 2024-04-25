@@ -9,13 +9,13 @@ import '../main.dart';
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
 
-  static final String routerName = "/login" ;
+  static const String routerName = "/login" ;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: ContextAppbar.universalAppbar(context, "hahhah", false),
-      body: SingleChildScrollView(child: HomePageWedget()),
+      body: const SingleChildScrollView(child: HomePageWedget()),
     );
   }
 }

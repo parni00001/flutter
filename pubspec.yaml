@@ -46,7 +46,7 @@ dependencies:
   #SharedPreferences 工具类
   sp_util: ^2.0.3
   #下拉刷新，上拉加载更多
-  easy_refresh: ^3.3.4
+  pull_to_refresh: ^2.0.0
   #相册
   image_picker: ^0.8.4+3
   #视频播放
