@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:sp_util/sp_util.dart';
 
 import '../../config/globe.dart';
+import '../../customwidgets/dialog/normal_dialog.dart';
 import '../../customwidgets/pop_camera_or_album_widget.dart';
 import '../login.dart';
 
@@ -29,6 +30,15 @@ class MinePage extends StatelessWidget {
                 );
               },
               child: Text("show bottom menu")),
+          ElevatedButton(onPressed: (){
+            // 显示对话框
+            showDialog(
+              context: context,
+              builder: (BuildContext context) {
+                return NormalDialog();
+              },
+            );
+          }, child: const Text("show dialog")),
           ElevatedButton(
               onPressed: () {
                 SpUtil.clear();
