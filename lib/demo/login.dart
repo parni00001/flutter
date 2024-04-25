@@ -15,7 +15,7 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: ContextAppbar.universalAppbar(context, "hahhah", false),
-      body: HomePageWedget(),
+      body: SingleChildScrollView(child: HomePageWedget()),
     );
   }
 }
