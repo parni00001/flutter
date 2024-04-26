@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:demoflutter/demo/mine/k_line_chart_page.dart';
 import 'package:demoflutter/presenter/user_manage.dart';
 import 'package:flutter/material.dart';
 import 'package:sp_util/sp_util.dart';
@@ -39,6 +40,9 @@ class MinePage extends StatelessWidget {
               },
             );
           }, child: const Text("show dialog")),
+          ElevatedButton(onPressed: (){
+            Navigator.pushNamed(context, KLineChartPage.routerName);
+          }, child: Text("k线图 ")),
           ElevatedButton(
               onPressed: () {
                 SpUtil.clear();
